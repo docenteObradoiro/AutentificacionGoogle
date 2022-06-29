@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/banner"/>
+
+    <TextView
+        android:id="@+id/txtInvitation"
+        style="@style/viewCustom"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/invitation"
+        android:textSize="15sp"
+        android:textColor="@color/purple_500"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/viewCustom"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/viewCustom"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:id="@+id/login"
+        style="@style/viewCustom"
+        android:text="@string/login"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        style="@style/viewCustom"
+        android:backgroundTint="@color/white"
+        android:text="@string/forgot_password"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/purple_500"
+        android:onClick="forgotPassword"/>
+
+    <LinearLayout
+        android:id="@+id/linearTerms"
+        style="@style/viewCustom"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accept"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="5sp"
+            android:text="@string/terms"
+            android:textColor="#FF0000"
+            android:onClick="goTerms"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/google"
+        android:text="@string/google"
+        android:paddingLeft="30sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/facebook"
+        android:text="@string/facebook"
+        android:paddingLeft="30sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
